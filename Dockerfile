@@ -16,4 +16,4 @@ RUN apt-get -y install software-properties-common
 RUN add-apt-repository ppa:webupd8team/java
 RUN add-apt-repository ppa:openhie/release
 RUN apt-get update
-RUN apt-get install openshr
+RUN apt-get -y install openshr
