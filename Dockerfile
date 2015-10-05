@@ -10,7 +10,7 @@ RUN echo openmrs >> /etc/hosts
 # Set timezone
 RUN apt-get -y install tzdata
 
-sudo add-apt-repository ppa:webupd8team/java
-sudo add-apt-repository ppa:openhie/release
-sudo apt-get update
-sudo apt-get install openshr
+RUN add-apt-repository ppa:webupd8team/java
+RUN add-apt-repository ppa:openhie/release
+RUN apt-get update
+RUN apt-get install openshr
